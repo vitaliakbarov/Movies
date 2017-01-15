@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.vetal.movieswiththreads.MainActivity"
+    android:id="@+id/main_activity"
+    >
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Search your movie"
+        android:textColor="#011fff"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"/>
+
+
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/edit_text_main_layout"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="Type your search..."
+        android:backgroundTint="#011fff"
+        android:textCursorDrawable="@null"
+        android:textColor="#011fff"
+        android:textStyle="bold"
+        android:textColorHint="#011fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Most popular 2016"
+        android:textColor="#ff010e"
+        android:layout_marginTop="12dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mostPopularThisYearTV"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Most popular EVER"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff010e"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        android:id="@+id/mostPopularEverTV"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn"
+            android:textColor="#011fff"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:id="@+id/search_button_main_layout"
+            android:text="Search"/>
+
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:id="@+id/description_activity_liniar_layout"
+    tools:context="com.example.vetal.movieswiththreads.DesctriptionActivity">
+
+       <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:paddingLeft="30dp"
+            android:id="@+id/description_activity_poster"
+            />
+    <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="#050400"
+            android:layout_marginLeft="100dp"
+            android:layout_centerInParent="true"
+            />
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/check_box_layout"
+        android:gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="1"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="2"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="3"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="4"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="5"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn"
+            android:layout_centerHorizontal="true"
+            android:text="Rate"
+            android:id="@+id/rate_button"
+            android:onClick="rateClicked"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#02138f"
+        android:paddingLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="10dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/description_activity_movie_name"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016"
+        android:gravity="right"
+        android:layout_marginRight="45dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#02138f"
+        android:id="@+id/description_activity_year"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actors: "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#02138f"
+        android:layout_marginLeft="25dp"
+        android:padding="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#02138f"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="15dp"
+        android:id="@+id/description_activity_actors_text_view"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripton:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#02138f"
+        android:layout_marginLeft="25dp"
+        android:padding="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#02138f"
+        android:id="@+id/description_activity_movie_description_text_view"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="15dp"
+        />
+
+</LinearLayout>
+</ScrollView>
