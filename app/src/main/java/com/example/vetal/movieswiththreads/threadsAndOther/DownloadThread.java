@@ -1,13 +1,14 @@
-package com.example.vetal.movieswiththreads;
+package com.example.vetal.movieswiththreads.threadsAndOther;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.vetal.movieswiththreads.classes.Movie;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,8 +21,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-
-import java.util.logging.LogRecord;
 
 
 public class DownloadThread extends Thread {
@@ -60,11 +59,14 @@ public class DownloadThread extends Thread {
 
         } catch (MalformedURLException e) {
             Log.d("ERROR", "download thread malfo");
+            sendError(e.toString());
             e.printStackTrace();
             Log.d("ERROR", "download thread prin");
+            sendError(e.toString());
         } catch (IOException e) {
             e.printStackTrace();
             sendError("NO Internet Conection");
+            sendError(e.toString());
         }
     }
     // make list of Movie
@@ -88,6 +90,7 @@ public class DownloadThread extends Thread {
         } catch (JSONException e) {
             e.printStackTrace();
            sendError("Movies were not found!!!");
+            sendError(e.toString());
         }
     }
 

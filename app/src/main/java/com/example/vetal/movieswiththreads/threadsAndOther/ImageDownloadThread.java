@@ -1,4 +1,4 @@
-package com.example.vetal.movieswiththreads;
+package com.example.vetal.movieswiththreads.threadsAndOther;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

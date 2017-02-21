@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "470217662146",
+    "firebase_url": "https://movies-bcc13.firebaseio.com",
+    "project_id": "movies-bcc13",
+    "storage_bucket": "movies-bcc13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470217662146:android:4d966d2ce0a16c87",
+        "android_client_info": {
+          "package_name": "com.example.vetal.movieswiththreads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470217662146-60q6sp35sgnmrembvq50llu0jfn4fng6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeNbJ9mU_uexbn50tjvGHsojN5oA3G2MM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

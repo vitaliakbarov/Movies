@@ -18,15 +18,40 @@
     android:orientation="vertical"
     android:layoutDirection="ltr"
     android:id="@+id/description_activity_liniar_layout"
-    tools:context="com.example.vetal.movieswiththreads.DesctriptionActivity">
+    tools:context="com.example.vetal.movieswiththreads.activities.DesctriptionActivity">
 
-       <ImageView
-            android:layout_width="200dp"
-            android:layout_height="150dp"
-            android:src="@mipmap/ic_launcher"
-            android:paddingLeft="30dp"
-            android:id="@+id/description_activity_poster"
-            />
+    <ImageView
+         android:layout_width="200dp"
+         android:layout_height="150dp"
+         android:src="@mipmap/ic_launcher"
+         android:paddingLeft="30dp"
+         android:id="@+id/description_activity_poster"
+         />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="current rating"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#5569ef"
+        android:layout_marginLeft="25dp"
+
+        android:padding="15dp"
+        android:id="@+id/current_rating_imdb"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Trailer"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:id="@+id/see_trailer"/>
+</LinearLayout>
     <!--
         <TextView
             android:layout_width="wrap_content"
@@ -51,7 +76,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="?android:starStyle"
-            android:tag="1"/>
+            android:tag="1"
+            android:id="@+id/checkBox" />
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,19 +99,46 @@
             android:layout_height="wrap_content"
             style="?android:starStyle"
             android:tag="5"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="6"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="7"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="8"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="9"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:tag="10"/>
 
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:background="@drawable/btn"
-            android:layout_centerHorizontal="true"
             android:text="Rate"
             android:id="@+id/rate_button"
-            android:onClick="rateClicked"/>
+            android:onClick="rateClicked"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
     <TextView
@@ -121,6 +175,7 @@
         android:textColor="#02138f"
         android:layout_marginLeft="25dp"
         android:padding="15dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

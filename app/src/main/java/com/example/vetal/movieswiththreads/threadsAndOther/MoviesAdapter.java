@@ -1,9 +1,6 @@
-package com.example.vetal.movieswiththreads;
+package com.example.vetal.movieswiththreads.threadsAndOther;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,12 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.net.URL;
+import com.example.vetal.movieswiththreads.R;
+import com.example.vetal.movieswiththreads.classes.Movie;
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 // helps to work with my personal list item
@@ -57,7 +53,8 @@ public class MoviesAdapter extends ArrayAdapter {
         viewHolder.title.setText(movies.get(position).getTitle());
         viewHolder.year.setText(movies.get(position).getYear());
 
-        new ImageDownloadThread(movies.get(position).getPoster(),viewHolder.poster).start();
+        Picasso.with(context).load(movies.get(position).getPoster()).resize(50,50).centerCrop().into(viewHolder.poster);
+        //new ImageDownloadThread(movies.get(position).getPoster(),viewHolder.poster).start();
 
         if(movies.isEmpty())
         {

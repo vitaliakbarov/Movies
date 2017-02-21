@@ -1,7 +1,9 @@
-package com.example.vetal.movieswiththreads;
+package com.example.vetal.movieswiththreads.threadsAndOther;
 
 import android.content.Context;
 import android.os.Handler;
+
+import com.example.vetal.movieswiththreads.classes.Movie;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -83,30 +85,30 @@ public class MostPopularThread extends Thread {
     }
 
     private void initArrayThisYear(){
-         urlArray = new String[]{"http://www.omdbapi.com/?t=Now+You+See+Me+2&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=Central+Intelligence&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=Deadpool&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=Captain+America%3A+Civil+War&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=Batman+v+Superman%3A+Dawn+of+Justice&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=Kung+Fu+Panda+3&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=X-Men%3A+Apocalypse+&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=Sausage+Party&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=Independence+Day%3A+Resurgence+&y=&plot=short&r=json",
-                 "http://www.omdbapi.com/?t=Jason+Bourne&y=&plot=short&r=json"};
+         urlArray = new String[]{"https://www.omdbapi.com/?t=Now+You+See+Me+2&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=Central+Intelligence&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=Deadpool&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=Captain+America%3A+Civil+War&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=Batman+v+Superman%3A+Dawn+of+Justice&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=Kung+Fu+Panda+3&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=X-Men%3A+Apocalypse+&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=Sausage+Party&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=Independence+Day%3A+Resurgence+&y=&plot=short&r=json",
+                 "https://www.omdbapi.com/?t=Jason+Bourne&y=&plot=short&r=json"};
     }
 
 
     private void initArrayEver() {
 
-        urlArray = new String[]{"http://www.omdbapi.com/?t=The+Godfather&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=+Raging+Bull+&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=Jurassic+World&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=Avatar&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=Titanic&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=pulp+fiction&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=casablanca&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=Harry+Potter+and+the+Deathly+Hallows+Part+2&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=Apocalypse+Now&y=&plot=short&r=json",
-                "http://www.omdbapi.com/?t=Fight+Club&y=&plot=short&r=json"};
+        urlArray = new String[]{"https://www.omdbapi.com/?t=The+Godfather&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=+Raging+Bull+&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=Jurassic+World&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=Avatar&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=Titanic&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=pulp+fiction&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=casablanca&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=Harry+Potter+and+the+Deathly+Hallows+Part+2&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=Apocalypse+Now&y=&plot=short&r=json",
+                "https://www.omdbapi.com/?t=Fight+Club&y=&plot=short&r=json"};
     }
 }

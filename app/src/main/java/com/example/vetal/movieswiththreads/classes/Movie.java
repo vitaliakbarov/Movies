@@ -1,4 +1,4 @@
-package com.example.vetal.movieswiththreads;
+package com.example.vetal.movieswiththreads.classes;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -12,6 +12,7 @@ public class Movie {
     private String plot;
     private String actors;
     private String link;
+    private String currentRating;
 
     public Movie(){ //constructor
 
@@ -26,9 +27,11 @@ public class Movie {
             id = object.getString("imdbID");
             plot = object.getString("Plot");
             actors = object.getString("Actors");
+            currentRating = object.getString("imdbRating");
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
     }
 
     // getters and setters
@@ -67,5 +70,13 @@ public class Movie {
 
     public void setLink(String link) {
         this.link = link;
+    }
+
+    public String getCurrentRating() {
+        return currentRating;
+    }
+
+    public void setCurrentRating(String currentRating) {
+        this.currentRating = currentRating;
     }
 }

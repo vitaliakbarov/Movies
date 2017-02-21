@@ -1,6 +1,5 @@
-package com.example.vetal.movieswiththreads;
+package com.example.vetal.movieswiththreads.threadsAndOther;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
@@ -8,8 +7,12 @@ import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
 
+import com.example.vetal.movieswiththreads.activities.MainActivity;
+import com.example.vetal.movieswiththreads.classes.Movie;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -22,10 +25,11 @@ public class DescriptionMovieThread extends Thread {
     private String link;
     private String actors;
     private String plot;
+    private String currentRating;
     private Movie movie;
     private Context context;
     private Handler handler;
-    private DownloadThread downloadThread = new DownloadThread();
+   // private DownloadThread downloadThread = new DownloadThread();
 
     public DescriptionMovieThread(Context context, String link)  //constructor
     {
@@ -45,15 +49,20 @@ public class DescriptionMovieThread extends Thread {
             while((line = reader.readLine()) != null) {  // download the data
                 data += line;
             }
+
             JSONObject object = new JSONObject(data);
             // init movie object
+            Log.d("DE", "hi" + data);
             movie = new Movie(object);
             plot = movie.getPlot();
             actors = movie.getActors();
+            currentRating = movie.getCurrentRating();
+            //Log.d("OBJ", currentRating);
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
             Log.d("ERROR", "descrioption");
+
         } catch (IOException e) {
             e.printStackTrace();
             Log.d("ERROR", "descrioption2");
@@ -72,7 +81,7 @@ public class DescriptionMovieThread extends Thread {
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d("ERROR", "descrioption3");
-            downloadThread.sendError("Movie was not found!!!");
+            //downloadThread.sendError("Movie was not found!!!");
         }
     }
     // getters
@@ -82,5 +91,13 @@ public class DescriptionMovieThread extends Thread {
 
     public String getPlot() {
         return plot;
+    }
+
+    public String getCurrentRating() {
+        return currentRating;
+    }
+
+    public void setCurrentRating(String currentRating) {
+        this.currentRating = currentRating;
     }
 }

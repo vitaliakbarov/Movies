@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layoutDirection="ltr"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+
+        android:layout_marginLeft="50dp"
+
+        android:text="Test"
+
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#02138f"
+        android:id="@+id/rated_item_list_text_view"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        />
+
+</LinearLayout>

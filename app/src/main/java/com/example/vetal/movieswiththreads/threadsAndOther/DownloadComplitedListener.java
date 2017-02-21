@@ -1,4 +1,6 @@
-package com.example.vetal.movieswiththreads;
+package com.example.vetal.movieswiththreads.threadsAndOther;
+
+import com.example.vetal.movieswiththreads.classes.Movie;
 
 import java.util.ArrayList;
 

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vetal.movieswiththreads.ResultsActivity"
+    tools:context="com.example.vetal.movieswiththreads.activities.ResultsActivity"
     android:id="@+id/result_activity"
     android:background="@drawable/background"
     >

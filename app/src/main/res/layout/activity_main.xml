@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:background="@drawable/background"
-    tools:context="com.example.vetal.movieswiththreads.MainActivity"
+    tools:context="com.example.vetal.movieswiththreads.activities.MainActivity"
     android:id="@+id/main_activity"
     >
 
@@ -22,8 +22,8 @@
         android:textSize="40dp"
         android:textStyle="bold"
         android:layout_marginTop="60dp"
-        android:layout_gravity="center"/>
-
+        android:layout_gravity="center"
+        android:id="@+id/textView3" />
 
 
     <EditText
@@ -63,6 +63,17 @@
         android:textStyle="bold"
 
         android:id="@+id/mostPopularEverTV"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="My Activities"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff010e"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        android:id="@+id/myActivities"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
